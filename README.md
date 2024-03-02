@@ -27,3 +27,26 @@
     }
     ```
     once you have added your db config as listed above, go to the src folder from your terminal and execute `npx sequelize db:create`
+
+    ## DB Design
+        - Airplane Table
+            -id
+            -model_number
+            -capacity
+        - Flight
+            -id
+            -departure_city_id
+            -destination_city_id
+            -airplane_id
+            -departure
+            -arrival
+            -Flight number
+            -airport_id
+        - Airport
+            -id
+            -name
+            -city_id
+            -adress
+        - City
+            -id
+            -name
