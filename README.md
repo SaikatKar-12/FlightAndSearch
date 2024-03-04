@@ -52,3 +52,9 @@
         - City
             -id
             -name
+
+    ## Tables
+
+    ### City -> id,name,created_at,updated_at
+    ### Airport -> id,name,adress,city_id,created_at,updated_at
+        Relationship-> city has many airports and airport belongs to a city (one to many)
