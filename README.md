@@ -58,3 +58,7 @@
     ### City -> id,name,created_at,updated_at
     ### Airport -> id,name,adress,city_id,created_at,updated_at
         Relationship-> city has many airports and airport belongs to a city (one to many)
+    ```
+    npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId: integer
+    ```
+    1:05:20

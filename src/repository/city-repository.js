@@ -73,6 +73,16 @@ class CityRepository{
             throw {error};
         }
     }
+
+    async createManyCities(cityNames) {
+        try {
+            const createdCities = await City.bulkCreate({cityNames});
+            return createdCities;
+        } catch (error) {
+            console.log("Something went wrong in repository layer");
+            throw { error };
+        }
+    }
 }
 
 module.exports = CityRepository;
